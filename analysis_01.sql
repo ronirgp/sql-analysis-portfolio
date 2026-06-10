@@ -9,4 +9,4 @@ FROM employees;
 
 SELECT department, COUNT(*) AS total
 FROM employees
-GROUP BY department;
+GROUP BY department; 
