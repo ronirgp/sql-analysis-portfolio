@@ -3,3 +3,4 @@ FROM employees
 GROUP BY department
 HAVING COUNT(*) >= 1
 ORDER BY total_employees DESC;
+ 
