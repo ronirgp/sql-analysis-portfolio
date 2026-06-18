@@ -1,13 +1,34 @@
-# 📊 SQL Analysis Portfolio
+# 📊 SQL Practice Portfolio
+Current Progress
+
+✓ 60 SQL exercises completed
+✓ SQLite database created
+✓ Git version control used for every exercise
+
+Next Goals
+
+- Reach 100 SQL exercises
+- Learn JOINs
+- Build real-world SQL projects
+
+
+
+
+
 
 [![SQL](https://img.shields.io/badge/SQL-Database-blue.svg)]
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-A comprehensive portfolio of SQL learning projects demonstrating core database concepts, query optimization, and real-world data analysis techniques.
+A collection of SQL practice exercises covering
+database fundamentals, filtering, sorting,
+aggregation, and query analysis using SQLite.
 
 ## 🎯 Portfolio Goal
 
-Master SQL fundamentals through hands-on projects, progressing from basic queries to complex aggregations and data analysis.
+Master SQL fundamentals through hands-on exercises
+and practical examples. Progressing from SELECT,
+WHERE, ORDER BY, and GROUP BY to JOINs and
+multi-table databases.
 
 ## 📚 Project Files
 
@@ -118,18 +139,6 @@ sqlite3 employees.db
 - **SQLite Browser** - Simple visual interface
 - **VSCode Extension** - SQL Tools extension
 
-### Option 3: Python
-```python
-import sqlite3
-
-conn = sqlite3.connect('employees.db')
-cursor = conn.cursor()
-
-with open('analysis_01.sql', 'r') as f:
-    cursor.executescript(f.read())
-
-conn.close()
-```
 
 ## 💡 What You'll Learn
 
