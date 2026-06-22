@@ -1,91 +1,113 @@
-SQL Practice Portfolio
+SQL Analysis Portfolio
 
-This repository contains my SQL learning journey and practice exercises.
+Overview
 
-About
+This repository documents my SQL learning journey through hands-on exercises and practical database analysis.
 
-I am learning SQL by completing hands-on exercises and committing my work to GitHub. The goal of this repository is to build a strong foundation in database querying and data analysis.
+The goal of this portfolio is to build strong SQL skills for data analysis and demonstrate consistent progress through real practice.
+
+---
 
 Current Progress
 
-- Completed 60 SQL exercises
-- Using SQLite for practice
-- Using Git and GitHub for version control
-- Practicing query analysis before running queries
+SQL Foundations
+
+- ✅ 100 SQL exercises completed
+- ✅ Filtering with WHERE
+- ✅ Sorting with ORDER BY
+- ✅ Logical operators (AND, OR)
+- ✅ Comparison operators (=, <>, >, <, >=, <=)
+
+JOIN Operations
+
+- ✅ JOIN exercises in progress
+- ✅ INNER JOIN
+- ✅ JOIN with WHERE
+- ✅ JOIN with AND / OR
+- ✅ JOIN with ORDER BY
+
+---
 
 Skills Practiced
 
+Data Retrieval
+
 - SELECT
-- FROM
+- DISTINCT
+
+Filtering Data
+
 - WHERE
+- AND
+- OR
+
+Sorting Data
+
 - ORDER BY
-- AND / OR conditions
-- COUNT
-- AVG
-- MAX
-- MIN
+- ASC
+- DESC
+
+Comparison Operators
+
+- =
+- <>
+- «»
+- <
+- «=»
+- <=
+
+JOINs
+
+- INNER JOIN
+- Multi-table JOINs
+
+---
+
+Repository Structure
+
+analysis_01.sql → analysis_100.sql
+joins/
+├── join_01.sql
+├── join_02.sql
+├── join_03.sql
+...
+
+---
+
+Learning Roadmap
+
+Completed
+
+- ✅ 100 Basic SQL Exercises
+
+In Progress
+
+- 🔄 60 JOIN Exercises
+
+Upcoming
+
+- Aggregate Functions
 - GROUP BY
 - HAVING
+- Subqueries
+- Window Functions
+- Real Data Analysis Projects
+- SQL Interview Preparation
 
-Database Structure
+---
 
-Table: employees
+Next Goals
 
-Columns:
+- Complete 60 JOIN exercises
+- Learn GROUP BY and Aggregate Functions
+- Build real-world SQL analysis projects
+- Prepare for SQL interviews
+- Expand portfolio with business analysis scenarios
 
-- employee_id
-- name
-- department
-- salary
-
-Example Query
-
-SELECT name, salary
-FROM employees
-WHERE salary > 1500
-ORDER BY salary DESC;
-
-Learning Goals
-
-Current focus:
-
-- SQL fundamentals
-- Query analysis
-- Database concepts
-
-Next goals:
-
-- Complete 100 SQL exercises
-- Learn JOINs
-- Learn subqueries
-- Build real-world SQL projects
-
-Repository Contents
-
-- analysis_01.sql
-- analysis_02.sql
-- ...
-- analysis_60.sql
-
-Each file contains SQL exercises used to practice different concepts and improve query-writing skills.
-
-Technologies
-
-- SQL
-- SQLite
-- Git
-- GitHub
+---
 
 Author
 
 Ronald Gustavo Pineda
 
-GitHub:
-https://github.com/ronirgp
-
-Location:
-El Salvador
-
-Notes
-
-This repository is focused on learning and practice. New exercises and projects will continue to be added as my SQL skills improve.
+Learning SQL, Data Analysis, Python, and Machine Learning through hands-on projects and continuous practice.
