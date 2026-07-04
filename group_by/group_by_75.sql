@@ -7,8 +7,7 @@ SELECT departments.department,
 FROM departments
 JOIN salaries
 ON departments.employee_id = salaries.employee_id
-WHERE salaries.salary >= 1300
 GROUP BY departments.department
-HAVING COUNT(*) >= 2
-   OR MAX(salaries.salary) >= 1500
-   OR SUM(salaries.salary) >= 3000;
+HAVING AVG(salaries.salary) >= 1500
+   OR MIN(salaries.salary) >= 1300
+   OR COUNT(*) >= 2;
