@@ -8,7 +8,7 @@
 -- My Solution
 
 
-SELECT department, sum(salary) AS total_pay
+SELECT department, sum(salary) AS total_salary
  FROM employees
  group by department
             
