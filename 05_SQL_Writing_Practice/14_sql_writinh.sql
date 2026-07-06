@@ -1,23 +1,21 @@
 -- ===========================================
--- SQL Writing Exercise 13
+-- SQL Writing Exercise 14
 -- Question:
 -- Write a query that shows every department,
--- the number of employees,
--- and the average salary.
---
--- Only include employees whose salary is
--- greater than or equal to 1300.
---
--- Sort by average salary (highest to lowest),
--- then by department name (A-Z).
+-- the highest salary,
+-- and the total number of employees.
+-- Only include employees whose salary
+-- is greater than or equal to 1200.
+-- Sort by highest salary (highest to lowest),
+-- then by total number of employees
+-- (highest to lowest).
 -- ===========================================
-
 -- My Solution
-
 SELECT department, 
-       COUNT(*) AS total_employees,
-       AVG(salary) AS average_salary
+       MAX(salary) AS highest_salary,
+       COUNT(*) AS total_employees
 FROM employees
-WHERE salary >= 1300
+WHERE salary >= 1200
 GROUP BY department
-ORDER BY average_salary DESC, department ASC;
+ORDER BY highest_salary DESC, total_employees DESC;
+       
