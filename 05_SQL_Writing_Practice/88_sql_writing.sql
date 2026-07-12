@@ -11,8 +11,8 @@
 -- to lowest salary.
 -- ===========================================
 -- My Solution
-SELECT DISTINCT departments.department_name,
-employees.salary
-FROM departments
-JOIN employees
+
+
+SELECT DISTINCT employees.salary
+FROM employees
 ORDER BY employees.salary DESC;
