@@ -24,7 +24,7 @@ employees.salary
 FROM employees
 JOIN departments
 ON employees.department_id = departments.department_id
-WHERE departments.department_name = 'sales'
+WHERE departments.department_name = 'Sales'
 OR departments.department_name = 'Marketing'
 ORDER BY departments.department_name ASC, employees.salary DESC, employees.name ASC;
 
