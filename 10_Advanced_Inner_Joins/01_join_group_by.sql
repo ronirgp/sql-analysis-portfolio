@@ -1,0 +1,20 @@
+-- ===========================================
+-- Advanced INNER JOIN Exercise 1
+-- Business Request:
+-- Show:
+-- - Department name
+-- - Total employees
+-- Order by:
+-- Total employees DESC.
+-- ===========================================
+-- My Solution
+SELECT
+e2.department_name,
+COUNT(*) AS total_employees
+FROM employees e1
+INNER JOIN departments e2
+ON e2.department_id = e1.department_id
+GROUP BY e2.department_name
+ORDER BY  total_employees DESC;
+
+
