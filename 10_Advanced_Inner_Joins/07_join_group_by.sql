@@ -16,6 +16,6 @@ SUM(salary) AS total_salary
 FROM employees e1
 INNER JOIN departments e2
 ON e2.department_id = e1.department_id
-GROUP BY department_name
+GROUP BY e2.department_name
 HAVING  total_salary > 9000
 ORDER BY  total_salary DESC;
