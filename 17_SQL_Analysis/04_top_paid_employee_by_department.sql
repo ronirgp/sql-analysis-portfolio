@@ -18,16 +18,18 @@
 -- My Solution
 WITH highest_paid AS
 (
-SELECT name,
-department_id,
-salary,
-MAX(salary) OVER(PARTITION BY department_id
-) AS max_salary
-FROM employees
+    SELECT name,
+           department_id,
+           salary,
+           MAX(salary) OVER(
+               PARTITION BY department_id
+           ) AS max_salary
+    FROM employees
 )
 SELECT name,
-department_id,
- max_salary
- FROM highest_paid
- ORDER BY department_id ASC, salary DESC;
-
+       department_id,
+       salary
+FROM highest_paid
+WHERE salary = max_salary
+ORDER BY department_id ASC,
+         salary DESC;
