@@ -17,10 +17,14 @@
 -- 3. Employee salary DESC
 -- ===========================================
 -- My Solution
-SELECT name AS employee_name,
-       department_id,
-       salary AS employee_salary,
-       AVG(salary) OVER(
-           PARTITION BY department_id
-       ) AS department_average
-FROM employees
+SELECT e1.name AS employee_name,
+e2.name AS manager_name,
+e1.salary  AS employee_salary,
+e2.salary AS manager_salary,
+e1.department_id AS department_id
+FROM employees e1
+INNER JOIN employees e2
+ON e1.manager_id = e2.employee_id
+WHERE e1.salary < e2.salary
+ORDER BY department_id ASC,
+e2.salary DESC, e1.salary DESC;
