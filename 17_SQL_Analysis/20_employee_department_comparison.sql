@@ -24,7 +24,7 @@ salary AS employee_salary,
 MAX(salary) OVER( PARTITION BY department_id
 ) AS department_max_salary
 FROM employees
-)
+) 
 SELECT employee_name,
 department_id,
 employee_salary
