@@ -1,9 +1,7 @@
 -- Business Request
-
 -- Management wants to identify employees whose salary is
  -- more than $400 below the average salary of their department.
 -- Return:
-
 -- Employee name
 -- Department ID
 -- Employee salary
@@ -31,5 +29,4 @@ department_average_salary - employee_salary AS
 amount_below_average
 FROM  average_salary
 WHERE department_average_salary - employee_salary > 400
-
 ORDER BY amount_below_average DESC, department_id ASC;
