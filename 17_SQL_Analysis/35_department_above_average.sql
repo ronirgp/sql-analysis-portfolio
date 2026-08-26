@@ -12,7 +12,7 @@
 -- My solution
 SELECT department_id,
 COUNT(*) AS total_employees, 
-AVG(salary) AS average_salary
+AVG(salary) AS average_salary 
 FROM employees
 GROUP BY department_id
 HAVING  average_salary > 1500
