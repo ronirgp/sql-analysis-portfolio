@@ -7,6 +7,8 @@
 -- Employee name
 -- Department ID
 -- Salary
+-- My solution
+
 WITH employee_salary AS
 (
     SELECT name AS employee_name,
