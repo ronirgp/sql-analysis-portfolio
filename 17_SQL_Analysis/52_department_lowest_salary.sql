@@ -14,5 +14,5 @@ SELECT department_id,
 MIN(salary) AS lowest_salary
 FROM employees
 GROUP BY department_id
-HAVING MIN(salary) = 1200
+HAVING MIN(salary) >= 1200
 ORDER BY lowest_salary DESC;
