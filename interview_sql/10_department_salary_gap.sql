@@ -8,6 +8,8 @@
 -- salary gap
 
 -- Sort by salary gap, largest to smallest.
+
+-- My solution
 SELECT department_id,
        COUNT(*) AS total_employees,
        MAX(salary) AS highest_salary,
