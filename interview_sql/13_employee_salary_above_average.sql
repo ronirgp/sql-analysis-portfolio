@@ -1,0 +1,31 @@
+-- Find employees whose salary is at least $500 higher than their department average, but exclude the highest-paid employee in each department.
+
+-- Return:
+-- employee name
+-- department ID
+-- employee salary
+-- department average salary
+-- highest department salary
+-- amount above department average
+-- Sort by amount above average, largest to smallest.
+-- My solution
+WITH salary AS (
+    SELECT
+        name AS employee_name,
+        department_id,
+        salary AS employee_salary,
+        AVG(salary) OVER(PARTITION BY department_id) AS department_average_salary,
+        MAX(salary) OVER(PARTITION BY department_id) AS highest_department_salary
+    FROM employees
+)
+SELECT
+    employee_name,
+    department_id,
+    employee_salary,
+    department_average_salary,
+    highest_department_salary,
+    employee_salary - department_average_salary AS amount_above_department_average_salary
+FROM salary
+WHERE employee_salary - department_average_salary >= 500
+  AND employee_salary < highest_department_salary
+ORDER BY amount_above_department_average_salary DESC;
